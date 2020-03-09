@@ -24,6 +24,8 @@ body {
 }
 .text-bold {
   font-weight: bold;
+  
+  color: black;
 }
 .text-strike {
   text-decoration: line-through;
@@ -55,6 +57,21 @@ body {
 }
 .image {
   width: 500px;
+}
+.box-list {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+
+  padding-right: 10px;
+
+  opacity: 0.05;
+  border: 2px solid beige;
+  border-radius: 5px;
+}
+.box-list:hover {
+  opacity: 1;
+  background-color: #000;
 }
 .list {
   font-size: 1.2em;
