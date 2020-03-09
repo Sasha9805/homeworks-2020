@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: url(../img/sauron-2.jpg) round;
+  background-attachment: fixed;
+}
+.container {
+  margin: 0 auto;
+  padding: 15px;
+  width: 1140px;
+
+  font-size: 20px;
+  line-height: 1.5em;
+  text-indent: 1.5em;
+  text-align: justify;
+
+  color: rgb(247, 179, 190);
+  background: rgba(131, 19, 19, 0.505);
+  border: 2px solid #d46c0b;
+  border-radius: 5px;
+  /* border: 30px solid #d46c0b;
+  border-image: url(../img/border-img.png) 30 round round; */
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-strike {
+  text-decoration: line-through;
+}
+.text-underline {
+  text-decoration: underline;
+}
+.note {
+  font-size: 1.5em;
+  font-weight: bold;
+
+  color: rgb(233, 184, 161);
+}
+.title-book {
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: rgb(175, 34, 9);
+}
+.title-chapter {
+  text-align: center;
+
+  color: rgb(233, 184, 161);
+}
+.box-image {
+  margin: 0 auto;
+  width: 500px;
+}
+.image {
+  width: 500px;
+}
+.list {
+  font-size: 1.2em;
+
+  text-indent: 0;
+}
+.list li {
+  list-style-type: none;
+}
+li a {
+  text-decoration: none;
+
+  color: rgb(212, 203, 78);
+}
+li a:hover {
+  color: rgb(218, 163, 91);
+}
+.link {
+  font-size: 1.5em;
+  text-decoration: none;
+
+  color: rgb(212, 203, 78);
+}
+.link:hover {
+  color: rgb(218, 163, 91);
+}
