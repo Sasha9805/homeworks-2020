@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Arial - Bold MT";
+  src: url('fonts/Arial-BoldMT.otf');
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Arial - Bold MT", Helvetica, Verdana, sans-serif;
+  /* font-family: 'Arial-BoldMT', 'AdobeInvisFont', 'MyriadPro-Regular'; */
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 64px;
+  padding-bottom: 113px;
+}
+.color {
+  color: rgb(253, 88, 178);
+}
+.advantages-header {
+  width: 323px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+}
+.advantages-block__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
+
+  text-align: center;
+}
+.advanages-block__descr {
+  position: relative;
+  top: -18px;
+
+  width: 260px;
+  margin: -4px auto;
+
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.375;
+
+  color: rgb(57, 57, 57);
+}
