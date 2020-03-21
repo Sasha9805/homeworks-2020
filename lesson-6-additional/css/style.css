@@ -94,6 +94,7 @@ body {
 }
 @media (max-width: 1010px) {
   .container {
-    width: 900px;
+    width: 100%;
+    /* width: 900px; */
   }
 }
