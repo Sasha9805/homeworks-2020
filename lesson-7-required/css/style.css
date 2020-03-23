@@ -1,0 +1,95 @@
+body {
+  font-family: Tahoma;
+}
+button:focus {
+  outline: none;
+}
+.container {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header {
+  padding-top: 77px;
+  padding-bottom: 96px;
+}
+.header-img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 45%;
+}
+.header-text {
+  display: inline-block;
+  vertical-align: middle;
+  width: 54%;
+}
+/* Блочный элемент p внутри строчных (стр.-бл.) нежелательно */
+.header-text__title {
+  margin-bottom: 15px;
+  font-size: 48px;
+  font-weight: bold;
+}
+.header-text__subtitle {
+  margin-bottom: 35px;
+  font-size: 30px;
+}
+.header-text__descr {
+  margin-bottom: 47px;
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 530px;
+}
+.header-text__price {
+  margin-bottom: 53px;
+  font-size: 48px;
+}
+.button {
+  border-radius: 5px;
+  background-color: rgb(240, 90, 34);
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 22px 43px;
+}
+.button-o {
+  color: rgb(240, 90, 34);
+  border: 2px solid rgb(240, 90, 34);
+  background-color: transparent;
+}
+.features {
+  padding-top: 89px;
+  padding-bottom: 99px;
+  background-color: rgb(242, 242, 242);
+}
+.section-title {
+  margin-bottom: 90px;
+  font-size: 30px;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+}
+.features-wrap::after {
+  /* content: '.';
+  height: 0;
+  overflow: hidden; 
+  display: block; 
+  clear: both; */
+  content: '';
+  clear: both;
+  display: table;
+}
+.features-block {
+  /* display: inline-block; */
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.features-block__img {
+  min-height: 50px;
+  margin-bottom: 23px;
+}
+.features-block__text {
+  font-size: 18px;
+  line-height: 1.222;
+}
