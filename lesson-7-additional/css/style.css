@@ -48,12 +48,14 @@ button:focus {
   font-size: 48px;
 }
 .button {
+  margin-right: 40px;
   padding: 22px 43px;
   
   font-size: 24px;
   font-weight: bold;
 
   color: rgb(255, 255, 255);
+  border: 2px solid rgb(240, 90, 34);
   border-radius: 5px;
   background-color: rgb(240, 90, 34);
 }
@@ -113,10 +115,10 @@ button:focus {
   clear: both;
 }
 .purchasers-photo {
-  max-width: 261px;
+  /* max-width: 261px; */
   max-height: 261px;
-  min-width: 261px;
-  min-height: 261px;
+  /* min-width: 261px;
+  min-height: 261px; */
   margin-right: 26px;
   margin-bottom: 35px;
   /* display: inline-block; */
@@ -129,8 +131,12 @@ button:focus {
 }
 .purchasers-photo__img {
   /* min-.. растянет (сожмет) фото в зависимости от его размеров */
-  min-width: 261px;
+  /* min-width: 261px;
   min-height: 261px;
   max-width: 261px;
-  max-height: 261px;
+  max-height: 261px; */
+
+  /* Можно просто задать фиксированный размер фото, а у родительского блока оставить max-height */
+  width: 261px;
+  height: 261px;
 }
