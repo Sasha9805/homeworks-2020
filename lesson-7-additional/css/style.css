@@ -97,7 +97,9 @@ button:focus {
   text-align: center;
 }
 .features-block__img {
-  min-height: 50px;
+  /*min-height: 50px;
+  max-height: 50px;*/
+  height: 50px;
   margin-bottom: 23px;
 }
 .features-block__text {
@@ -117,8 +119,8 @@ button:focus {
 .purchasers-photo {
   /* max-width: 261px; */
   max-height: 261px;
-  /* min-width: 261px;
-  min-height: 261px; */
+  /* min-width: 261px;*/
+  min-height: 261px; 
   margin-right: 26px;
   margin-bottom: 35px;
   /* display: inline-block; */
