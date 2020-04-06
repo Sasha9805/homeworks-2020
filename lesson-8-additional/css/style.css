@@ -1,0 +1,29 @@
+body {
+  font-family: "Tahoma";
+}
+* {
+  box-sizing: border-box;
+}
+.features {
+  padding-top: 70px;
+  padding-bottom: 97px;
+  color: rgb(51, 51, 51);
+  text-align: center;
+}
+.features-header {
+  margin-bottom: 82px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.features-block {
+  margin-bottom: 20px;
+}
+.features-block__img {
+  min-height: 77px;
+  margin-bottom: 5px;
+}
+.features-block__descr { 
+  font-weight: bold;
+}
