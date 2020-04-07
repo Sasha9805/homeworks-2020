@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Arial - Bold MT";
+  src: url('fonts/Arial-BoldMT.otf');
+}
+body {
+  font-family: "Arial - Bold MT", Helvetica, Verdana, sans-serif;
+}
+.features {
+  padding-top: 64px;
+  padding-bottom: 110px;
+
+  text-align: center;
+}
+.section-title {
+  max-width: 326px;
+  margin-bottom: 25px;
+
+  font-size: 30px;
+  font-weight: bold;
+}
+.section-title__word {
+  color: rgb(253, 88, 178);
+}
+.features__descr {
+  margin-top: -16px;
+  max-width: 260px;
+
+  font-weight: bold;
+  line-height: 1.375;
+
+  color: rgb(57, 57, 57);
+}
