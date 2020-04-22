@@ -1,0 +1,58 @@
+*
+  box-sizing: border-box
+body
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  min-height: 100vh
+
+  font-family: sans-serif
+
+  background-color: #f9f9f9
+.container
+  width: 1140px
+  // margin: 0 auto
+.btn
+  max-width: 75%
+  padding: 23px 74px
+
+  font-size: 13px
+  font-weight: bold
+  text-transform: uppercase
+  text-decoration: none
+
+  color: rgb(35, 186, 193)
+  border: 1px solid rgb(35, 186, 193)
+  // transform: scale(1.01, 1)
+  &:hover
+    color: #fff
+    background-color: rgb(35, 186, 193)
+    transition: all 0.5s
+.tools
+  // padding: 100px 0
+  text-align: center
+  // background-color: #f9f9f9
+  &-header
+    margin: 0 0 125px 0
+
+    font-size: 36px
+    font-weight: normal
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-elem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+  &-name
+    margin-bottom: 25px
+
+    font-weight: normal
+  &-price
+    margin-bottom: 25px
+
+    font-size: 18px
+    font-weight: bold
