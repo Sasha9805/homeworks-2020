@@ -1,0 +1,285 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Museo Sans Cyrl 300';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: local("MuseoSansCyrl-300"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl 700';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: local("MuseoSansCyrl-700"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 580px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 420px;
+    width: 86%;
+  }
+}
+
+.button {
+  border: none;
+  border-radius: 10px;
+  background-color: #ffd200;
+  cursor: pointer;
+}
+
+/* Импорт стилей шапки */
+.navbar {
+  padding: 8px 0;
+}
+
+.navbar-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+.navbar__address {
+  font-size: 13px;
+  color: #333333;
+}
+
+.navbar__button {
+  padding: 18px 30px;
+  margin-left: 30px;
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 13px;
+  color: #333333;
+}
+
+.navbar__phone {
+  display: inline-block;
+  margin-top: 6px;
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: #333333;
+}
+
+@media (max-width: 767px) {
+  .navbar__logo {
+    width: 120px;
+  }
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__button {
+    padding: 15px 26px;
+    margin-left: 0;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar__logo {
+    width: 90px;
+  }
+  .navbar__button {
+    font-size: 10px;
+    border-radius: 5px;
+  }
+}
+
+/* Стили для главного экрана */
+.hero {
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+
+.hero-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-right: 100px;
+}
+
+.hero-text__title {
+  margin-bottom: 40px;
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 41px;
+  line-height: 1.341;
+  color: #333333;
+}
+
+.hero-text__subtitle {
+  display: inline-block;
+  margin-bottom: 65px;
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 20px;
+  color: #333333;
+}
+
+.hero-list {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 27px;
+}
+
+.hero-list__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+  margin-right: 30px;
+  border: 2px solid #ffd200;
+  border-radius: 50%;
+}
+
+.hero-list__text {
+  max-width: 275px;
+  font-size: 14px;
+  line-height: 1.714;
+  color: #333333;
+}
+
+@media (max-width: 1200px) {
+  .hero-text__title {
+    font-size: 24px;
+  }
+  .hero-list {
+    margin-bottom: 44px;
+  }
+  .hero-text {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-list__text {
+    max-width: 100%;
+  }
+  .hero-text__subtitle {
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding: 45px 0;
+  }
+  .hero-text {
+    padding-right: 0;
+  }
+  .hero-text__title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: normal;
+  }
+  .hero-text__subtitle {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .hero-list__item {
+    margin-bottom: 20px;
+  }
+  .hero-list__image {
+    margin-right: 15px;
+  }
+  .hero-list__text {
+    max-width: 95%;
+    font-size: 12px;
+    line-height: normal;
+  }
+}
+/*# sourceMappingURL=style.css.map */
