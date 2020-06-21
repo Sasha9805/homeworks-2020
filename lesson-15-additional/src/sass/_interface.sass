@@ -1,0 +1,61 @@
+*
+  box-sizing: border-box
+body
+  // font-family: 'Museo Sans Light', sans-serif
+  +reg
+  color: $text-color
+img
+  max-width: 100%
+button
+  &:hover
+    cursor: pointer
+.container
+  max-width: 1170px
+  margin: 0 auto
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+    width: 95%
+@media (max-width: 991px)
+  .container
+    max-width: 720px
+    width: 95%
+@media (max-width: 767px)
+  .container
+    max-width: 580px
+    width: 95%
+@media (max-width: 576px)
+  .container
+    max-width: 420px
+    width: 86%
+.phone
+  display: block
+
+  +bold
+  text-decoration: none
+
+  color: $text-color
+.button
+  border: none
+  border-radius: 10px
+  background-color: $main-color
+  &:hover
+    background-color: lighten($main-color, 10%)
+    cursor: pointer
+.section
+  &-title
+    +bold
+    font-size: 24px
+    line-height: 1.458
+  &-subtitle
+    display: block
+    font-size: 16px
+.input
+  padding: 24px
+  border: 1px solid $input-border
+  border-radius: 10px
+  font-size: 15px
+  color: $input-color
+  &:focus
+    border-color: $main-color
+    outline: none
