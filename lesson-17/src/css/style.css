@@ -1,0 +1,584 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Museo Sans Light', sans-serif;
+  color: #333333;
+}
+
+img {
+  max-width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 580px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 420px;
+    width: 86%;
+  }
+}
+
+.phone {
+  display: block;
+  font-family: 'Museo Sans Bold', sans-serif;
+  text-decoration: none;
+  color: #333333;
+}
+
+.button {
+  border: none;
+  border-radius: 10px;
+  background-color: #ffd200;
+}
+
+.button:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
+}
+
+.section-title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 24px;
+  line-height: 1.458;
+  text-align: center;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 16px;
+}
+
+.input {
+  padding: 24px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #999999;
+}
+
+.input:focus {
+  border-color: #ffd200;
+  outline: none;
+}
+
+.arrow-up {
+  position: fixed;
+  top: 50%;
+  right: 5%;
+  z-index: 1;
+  display: none;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  background-color: #000;
+  border-radius: 50%;
+  opacity: 0.2;
+}
+
+.arrow-up_visible {
+  display: block;
+}
+
+.arrow-up:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
+}
+
+/* Импорт стилей шапки */
+.navbar {
+  padding: 8px 0;
+}
+
+.navbar-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+.navbar__address {
+  font-size: 13px;
+  color: #333333;
+}
+
+.navbar__button {
+  padding: 18px 30px;
+  margin-left: 30px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 13px;
+  color: #333333;
+}
+
+.navbar__phone {
+  margin-top: 6px;
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .navbar__logo {
+    width: 120px;
+  }
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__button {
+    padding: 15px 26px;
+    margin-left: 0;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar__logo {
+    width: 90px;
+  }
+  .navbar__button {
+    font-size: 10px;
+    border-radius: 5px;
+  }
+}
+
+/* Стили для главного экрана */
+.hero {
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+
+.hero-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-right: 100px;
+}
+
+.hero-text__title {
+  margin-bottom: 40px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 41px;
+  line-height: 1.341;
+  color: #333333;
+}
+
+.hero-text__subtitle {
+  display: inline-block;
+  margin-bottom: 65px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 20px;
+  color: #333333;
+}
+
+.hero-list {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 27px;
+}
+
+.hero-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.hero-list__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+  margin-right: 30px;
+  border: 2px solid #ffd200;
+  border-radius: 50%;
+}
+
+.hero-list__text {
+  max-width: 275px;
+  font-size: 14px;
+  line-height: 1.714;
+  color: #333333;
+}
+
+@media (max-width: 1200px) {
+  .hero-text__title {
+    font-size: 24px;
+  }
+  .hero-list {
+    margin-bottom: 38px;
+  }
+  .hero-text {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-list__text {
+    max-width: 100%;
+  }
+  .hero-text__subtitle {
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding: 45px 0;
+  }
+  .hero-text {
+    padding-right: 0;
+  }
+  .hero-text__title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: normal;
+  }
+  .hero-text__subtitle {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .hero-list__item {
+    margin-bottom: 20px;
+  }
+  .hero-list__image {
+    margin-right: 15px;
+  }
+  .hero-list__text {
+    max-width: 95%;
+    font-size: 12px;
+    line-height: normal;
+  }
+}
+
+/* Стили для блока offer */
+.offer {
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 90px;
+  background: url("../img/offer/offer-bg.png") no-repeat center right;
+  background-size: contain;
+}
+
+.offer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.offer-block {
+  position: relative;
+  width: 50%;
+  padding-right: 90px;
+}
+
+.offer__title {
+  max-width: 360px;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.offer__subtitle {
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.offer__input {
+  width: 240px;
+  margin-bottom: 28px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  padding: 27px 0;
+  margin-bottom: 25px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 16px;
+}
+
+.offer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer__time {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.offer__call {
+  width: 200px;
+}
+
+.offer__text {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.offer__phone {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .offer__button {
+    font-size: 14px;
+  }
+  .offer__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer__time {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .offer {
+    background: #fff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .offer {
+    padding: 48px 0;
+  }
+  .offer__title {
+    max-width: 260px;
+    margin-bottom: 18px;
+    font-size: 18px;
+    line-height: normal;
+  }
+  .offer__subtitle {
+    margin-bottom: 28px;
+    font-size: 14px;
+  }
+  .offer__button {
+    padding: 19px 62px;
+    margin-bottom: 18px;
+  }
+  .offer__time {
+    margin-bottom: 8px;
+  }
+}
+
+/* Стили для блока portfolio (slider) */
+.portfolio {
+  padding: 90px 0;
+  background: url("../img/portfolio/bg.png") repeat-y left center;
+  background-size: 50%;
+  background-color: #f5f5f5;
+}
+
+.portfolio__title {
+  margin: 0 auto 90px;
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.portfolio__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 120px;
+  margin: 70px auto 0;
+}
+
+.slider__image {
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .portfolio__title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .portfolio {
+    background: #f5f5f5;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio {
+    padding: 43px 0 60px;
+  }
+  .portfolio__title {
+    margin-bottom: 38px;
+    font-size: 18px;
+    line-height: normal;
+  }
+  .slider {
+    max-height: 185px;
+    max-width: 245px;
+    margin: 0 auto 48px;
+  }
+}
+
+/* Стили для модального окна */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal_visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  max-width: 450px;
+  width: 90%;
+  min-height: 200px;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.modal-dialog__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/*# sourceMappingURL=style.css.map */
