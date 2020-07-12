@@ -1,0 +1,112 @@
+@keyframes fadeInLeft
+  from
+    transform: translateX(-100px)
+    opacity: 0
+  to
+    transform: translateX(0)
+    opacity: 1
+@keyframes fadeInRight
+  from
+    transform: translateX(100px)
+    opacity: 0
+  to
+    transform: translateX(0)
+    opacity: 1
+@keyframes backInDown
+  from
+    transform: perspective(400px) translateY(-100px) scale3d(0.5,0.5,1)
+    opacity: 0
+  to
+    transform: translateY(0)
+    opacity: 1
+@keyframes backInRight
+  from
+    transform: perspective(400px) translateX(100px) scale3d(0.5,0.5,1)
+    opacity: 0
+  to
+    transform: translateX(0)
+    opacity: 1
+@keyframes backInUp
+  from
+    transform: perspective(400px) translateY(100px) scale3d(0.5,0.5,1)
+    opacity: 0
+  to
+    transform: translateY(0)
+    opacity: 1
+@keyframes bounceInLeft
+  from
+    transform: translateX(-200px)
+    opacity: 0
+  80%
+    transform: translateX(30px) skewX(-10deg)
+    opacity: 0.9
+  to
+    transform: translateX(0) skewX(0)
+    opacity: 1
+@keyframes bounceInRight
+  from
+    transform: translateX(200px)
+    opacity: 0
+  80%
+    transform: translateX(-30px) skewX(10deg)
+    opacity: 0.9
+  to
+    transform: translateX(0) skewX(0)
+    opacity: 1
+@keyframes bounceInUp
+  from
+    transform: translateY(200px)
+    opacity: 0
+  80%
+    transform: translateY(-30px)
+    opacity: 0.9
+  to
+    transform: translateY(0)
+    opacity: 1
+@keyframes fadeInUp
+  from
+    transform: translateY(400px)
+    opacity: 0
+  to
+    transform: translateY(0)
+    opacity: 1
+@keyframes fadeInDown
+  from
+    transform: translateY(-400px)
+    opacity: 0
+  to
+    transform: translateY(0)
+    opacity: 1
+@keyframes rotateRight
+  from
+    transform: translateX(-500px) rotate(-90deg)
+    opacity: 0
+  to
+    transform: translateX(0) rotate(0deg)
+    opacity: 1
+.fadeLeft
+  animation: fadeInLeft 2s ease forwards
+.fadeRight
+  animation: fadeInRight 2s ease forwards
+.fadeUp-01
+  animation: fadeInUp 2s 0.1s ease forwards
+.fadeUp-02
+  animation: fadeInUp 2s 0.2s ease forwards
+.fadeUp-03
+  animation: fadeInUp 2s 0.3s ease forwards
+.fadeDown
+  animation: fadeInDown 2s ease forwards
+.backDown
+  animation: backInDown 2s ease forwards
+.backRight
+  animation: backInRight 2s ease forwards
+.backUp
+  animation: backInUp 2s ease forwards
+.bounceLeft
+  animation: bounceInLeft 1s ease-in-out forwards
+.bounceRight
+  animation: bounceInRight 1s ease-in-out forwards
+.bounceUp
+  animation: bounceInUp 1s ease-in-out forwards
+.rotateRight
+  animation: rotateRight 1s ease forwards
