@@ -1,0 +1,114 @@
+*
+  box-sizing: border-box
+body
+  // font-family: 'Museo Sans Light', sans-serif
+  +reg
+  color: $text-color
+img
+  max-width: 100%
+button
+  &:hover
+    cursor: pointer
+.container
+  max-width: 1170px
+  margin: 0 auto
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+    width: 95%
+@media (max-width: 991px)
+  .container
+    max-width: 720px
+    width: 95%
+@media (max-width: 767px)
+  .container
+    max-width: 580px
+    width: 95%
+@media (max-width: 576px)
+  .container
+    max-width: 420px
+    width: 86%
+.phone
+  display: block
+
+  +bold
+  text-decoration: none
+
+  color: $text-color
+.button
+  +bold
+  font-size: 16px
+  
+  border: none
+  border-radius: 10px
+  background-color: $main-color
+  &:hover
+    background-color: lighten($main-color, 10%)
+    cursor: pointer
+.section
+  &-title
+    +bold
+    font-size: 24px
+    line-height: 1.458
+    text-align: center
+  &-subtitle
+    display: block
+    font-size: 16px
+.input
+  padding: 24px
+  border: 1px solid $input-border
+  border-radius: 10px
+  font-size: 15px
+  color: $input-color
+  &:focus
+    border-color: $main-color
+    outline: none
+.arrow-up
+  position: fixed
+  top: 50%
+  right: 5%
+  z-index: 1
+
+  display: none
+  width: 50px
+  height: 50px
+  margin-top: -25px
+  
+  background-color: #000
+  border-radius: 50%
+  opacity: 0.2
+  &_visible
+    display: block
+  &:hover
+    cursor: pointer
+    opacity: 1
+.arrows
+  &__left, &__right
+    &:hover
+      cursor: pointer
+.invalid
+  border: 1px solid red
+  font-size: 15px
+  color: $text-color
+  &:not(:last-of-type)
+    margin-bottom: 15px
+  // &:nth-child(2n)
+  //   border: none
+div.invalid
+  border: none
+  // Чтобы выводить сообщения в виде флекс, некорректная работа может быть, не то сообщение (напр., сообщение об ошибке поля ввода имени под полем ввода телефона)
+// .message
+//   display: flex
+//   div
+//     flex-basis: 50%
+//     text-align: center
+// @media (max-width: 1200px)
+//   .message
+//     display: block
+//     div
+//       text-align: left
+//       margin-bottom: 15px
+@media (max-width: 576px)
+  div.invalid
+    &:last-of-type
+      margin-bottom: 15px
