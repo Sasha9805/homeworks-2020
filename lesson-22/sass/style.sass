@@ -1,0 +1,137 @@
+@font-face
+  font-family: 'Myriad Pro Regular'
+  src: url('../fonts/MyriadPro/MyriadPro-Regular.eot')
+  src: url('../fonts/MyriadPro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MyriadPro/MyriadPro-Regular.woff') format('woff'),
+  url('../fonts/MyriadPro/MyriadPro-Regular.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+@font-face
+  font-family: 'Myriad Pro Bold'
+  src: url('../fonts/MyriadPro/MyriadPro-Bold.eot')
+  src: url('../fonts/MyriadPro/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MyriadPro/MyriadPro-Bold.woff') format('woff'),
+  url('../fonts/MyriadPro/MyriadPro-Bold.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+@mixin bold
+  font-family: 'Myriad Pro Bold', sans-serif
+@mixin reg
+  font-family: 'Myriad Pro Regular', sans-serif
+  
+$color-instructor: rgb(102, 102, 102)
+$color-instagram: rgb(249, 249, 249)
+$bg-inst: #3f729b
+$bg-instr: #f9f9f9
+
+*
+  box-sizing: border-box
+  +reg
+img
+  // max-width: 100%
+  width: 100%
+  height: 100%
+  // min-height: 100%
+.wrapper
+  display: grid
+  grid-template-columns: repeat(4, 25%)
+  // grid-template-rows: repeat(3, 500px)
+  grid-template-rows: 500px repeat(2, 515px)
+  grid-template-areas: "instructor-photo instructor-photo instructor-text instructor-text" "photo-1 photo-2 photo-3 photo-4" "instagram-text instagram-text instagram-photo ."
+  
+  background-color: $bg-inst
+.instructor
+  &__photo
+    grid-area: instructor-photo
+  &__text
+    grid-area: instructor-text
+    padding-top: 110px
+    padding-left: 55px
+
+    background-color: $bg-instr
+    color: $color-instructor
+  &__descr
+    max-width: 428px
+
+    font-size: 24px
+    line-height: normal
+    letter-spacing: -0.6px
+// .photographs
+//   grid-area: photographs
+.title
+  font-size: 24px
+  +bold
+  text-transform: uppercase
+@for $i from 1 through 4
+  .photo-#{$i}
+    grid-area: photo-#{$i}
+.instagram
+  &__text
+    grid-area: instagram-text
+    padding-left: 220px
+    padding-top: 120px
+
+    color: $color-instagram
+  &__descr
+    max-width: 300px
+    margin-bottom: 70px
+
+    font-size: 24px
+    letter-spacing: -0.6px
+  &__photo
+    grid-area: instagram-photo
+  &__btn
+    color: $color-instagram
+.button
+  padding: 17px 36px
+  cursor: pointer
+  
+  font-size: 18px
+  text-transform: uppercase
+  letter-spacing: 0.7px
+
+  border-radius: 40px
+  border: 1.87px solid #fff
+  background-color: transparent
+
+@media screen and (max-width: 1200px)
+  .button
+    width: 90%
+    padding: 20px 30px
+
+    font-size: 15px
+  .wrapper
+    grid-template-columns: 1fr 1fr
+    // grid-template-rows: repeat(3, 500px)
+    // grid-template-rows: 500px repeat(2, 515px)
+    grid-auto-rows: 380px
+    grid-template-areas: "instructor-photo instructor-photo" "instructor-text instructor-text" "photo-1 photo-2" "photo-3 photo-4" "instagram-text instagram-photo"
+  .instructor
+    &__text
+      display: flex
+      flex-direction: column
+    &__title
+      margin: 0 auto 50px
+    &__descr
+      margin: 0 auto
+  .instagram
+    &__text
+      display: flex
+      flex-direction: column
+      margin: auto
+      padding-left: 20px
+      padding-top: 20px
+    &__descr
+      margin-bottom: 20px
+
+      font-size: 15px
+    &__title
+      font-size: 15px
+
+@media screen and (max-width: 576px)
+  .wrapper
+    grid-template-columns: 1fr
+    grid-template-areas: "instructor-photo" "instructor-text" "photo-1" "photo-2" "photo-3" "photo-4" "instagram-text" "instagram-photo"
+  .instructor
+    &__text
+      padding-left: 25px
